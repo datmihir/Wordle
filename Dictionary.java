@@ -10,7 +10,6 @@ public class Dictionary {
     private List<String> words;
 
     public Dictionary() {
-        // Expanded default dictionary
         words = new ArrayList<>(Arrays.asList(
             "APPLE", "BEACH", "CHART", "DANCE", "EARTH", "FLAME", "GLOBE", "HEART", "IMAGE", "JUICE",
             "KNIFE", "LEMON", "MUSIC", "NIGHT", "OCEAN", "PIANO", "QUEEN", "RIVER", "STORM", "TIGER",

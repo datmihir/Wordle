@@ -52,19 +52,18 @@ public class WordleGame {
         System.out.println("After each guess, you'll get feedback:");
         System.out.println("Green - Correct letter in correct position");
         System.out.println("Yellow - Correct letter in wrong position");
-        // System.out.println("⬛ - Letter not in the word");
         System.out.println();
     }
 
     private void displayGameState() {
-        System.out.println("\n═════════════════════════════════");
+        System.out.println("\n----------------------------------");
         for (int i = 0; i < previousGuesses.size(); i++) {
             System.out.println(previousGuesses.get(i) + " " + previousFeedbacks.get(i));
         }
         for (int i = previousGuesses.size(); i < MAX_ATTEMPTS; i++) {
             System.out.println("_ _ _ _ _");
         }
-        System.out.println("═════════════════════════════════");
+        System.out.println("------------------------------------");
         if (attempts < MAX_ATTEMPTS && !gameWon) {
             System.out.println("Attempt " + (attempts + 1) + "/" + MAX_ATTEMPTS);
         }
